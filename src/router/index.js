@@ -22,7 +22,7 @@ router.beforeEach((to, from, next) => {
         // 不存在的路由地址
         next('/404')
     } else {
-        window.document.title = (to.query.title ? to.query.title : to.meta.title) + '-ZHOUYI'
+        window.document.title = (to.query.title ? to.query.title : to.meta.title) + '-LZP'
 
         if (to.path !== from.path) {
             setLoading(true)
