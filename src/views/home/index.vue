@@ -3,8 +3,8 @@
     <Intro @mose="scrollToSection1"/>
     <section class="main-warp" id="about">
       <section class="banner">
-        <!--        <img class="banner-cover"-->
-        <!--             alt="banner" src="../../assets/img/banner.jpg">-->
+               <img class="banner-cover"
+                    alt="banner" src="../../assets/img/banner.jpg">
         <div class="banner-content">
           <div class="banner-container">
             <div class="row">
@@ -12,7 +12,7 @@
               <div class="row-col-right">
                 <div class="banner-text"
                      :style="`transform: translateX(-${state.titleAnimation?0:50}%)`">
-                  <p class="text-tip">Hi! I'm {{ setting.websiteInfo.name || 'ZHOU YI' }}</p>
+                  <p class="text-tip">Hi! I'm {{ setting.websiteInfo.name || 'Li ZhiPeng' }}</p>
                   <p class="text-main">
                     {{ setting.websiteInfo.motto || "Welcome To My Personal Homepage! Let's Go!" }}</p>
                 </div>
@@ -34,8 +34,9 @@
                 <div class="sidebar-label">{{ setting.websiteInfo.occupationEn }}</div>
                 <div class="c-divider c-mb-40"></div>
                 <div class="sidebar-social">
-                  <a :href="setting.userInfo.github" target="_blank"><i class="iconfont icon-github"></i></a>
-                  <a :href="setting.userInfo.gitee" target="_blank"><i class="iconfont icon-gitee"></i></a>
+                  邮箱：lzp_991125@163.com
+                  <!-- <a :href="setting.userInfo.github" target="_blank"><i class="iconfont icon-github"></i></a> -->
+                  <!-- <a :href="setting.userInfo.gitee" target="_blank"><i class="iconfont icon-gitee"></i></a> -->
                   <!--                  <a href="https://github.com/ZHYI-source" target="_blank"><i class="iconfont icon-github"></i></a>-->
                   <!--                  <a href="https://github.com/ZHYI-source" target="_blank"><i class="iconfont icon-github"></i></a>-->
                 </div>
@@ -51,21 +52,21 @@
                   </li>
 
                   <li class="other-item">
-                    <span class="item-label">微信/QQ：</span>
+                    <span class="item-label">微信：</span>
                   </li>
                   <div class="social">
-                    <img width="80"
+                    <img width="120"
                          class="lazy-image"
                          :data-src="setting.userInfo.wx">
-                    <img width="80"
+                    <!-- <img width="80"
                          class="lazy-image"
-                         :data-src="setting.userInfo.qq">
+                         :data-src="setting.userInfo.qq"> -->
                   </div>
                 </ul>
                 <div class="c-divider c-mb-40"></div>
 
-                <div class="sidebar-btn" @click="scrollToSection1('contact')">
-                  <span>在线留言</span>
+                <div class="sidebar-btn" @click="downloadResume">
+                  <span>下载简历</span>
                   <!--                  <i class="iconfont icon-github"></i>-->
                 </div>
                 <span class="downResume" v-if="setting.userInfo.showResumeUrl" @click="downloadResume">下载简历</span>
@@ -77,23 +78,23 @@
               <div class="brand-card-list">
                 <div class="brand-card-item">
                   <div class="card-item">
-                    <h3 class="card-item-title">14+</h3>
+                    <h3 class="card-item-title">5年</h3>
                     <div class="c-divider"></div>
-                    <div class="card-item-content">开源项目</div>
+                    <div class="card-item-content">工作年限</div>
                   </div>
                 </div>
                 <div class="brand-card-item">
                   <div class="card-item">
-                    <h3 class="card-item-title">3 +</h3>
+                    <h3 class="card-item-title">20 +</h3>
                     <div class="c-divider"></div>
                     <div class="card-item-content">实战经验</div>
                   </div>
                 </div>
                 <div class="brand-card-item">
                   <div class="card-item">
-                    <h3 class="card-item-title">50+</h3>
+                    <h3 class="card-item-title">面议</h3>
                     <div class="c-divider"></div>
-                    <div class="card-item-content">项目合作</div>
+                    <div class="card-item-content">期望薪资</div>
                   </div>
                 </div>
               </div>
@@ -129,7 +130,7 @@
 
         <section class="about">
           <ZySectionHeader title="自我介绍" titleNum="02"/>
-          <section class="animate-me">
+          <!-- <section class="animate-me">
             "<span class="me-text me-text-a">三年前</span>，我踏上了<span class="me-text me-text-b">前端开发</span>的旅程
             ，从那时起，对前端技术<span class="me-text me-text-c">充满热情</span>，
             并迫不及待地构建各种<span class="me-text me-text-d">响应式</span>设计和<span class="me-text me-text-c">移动端</span>的开发。我比较注重
@@ -137,6 +138,26 @@
               class="me-text me-text-c">优化性能</span>和解决兼容性问题的经验。
             热衷于<span class="me-text me-text-c">创新</span>思维，喜欢思考和
             <span class="me-text me-text-c">解决问题</span>。追求自己的兴趣和激情，让每一天都充满<span class="me-text me-text-c">活力</span>和乐趣
+          </section> -->
+
+          <section class="animate-me">
+
+            <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <span class="me-text me-text-a">五年</span>专业<span class="me-text me-text-b">前端开发</span>经验
+            ，深耕<span class="me-text me-text-c">Vue3、React、UniApp</span>核心技术栈。精通<span class="me-text me-text-d">微前端、跨平台开发、数据可视化、3D场景渲染</span>等关键技术。具备<span class="me-text me-text-d">大型项目</span>从0到1<span class="me-text me-text-c">架构搭建与落地</span>的全流程经验。 </div>
+
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              具备扎实的<span class="me-text me-text-d">技术基础</span>与精准的
+            <span class="me-text me-text-e">技术选型</span>能力,根据项目需求制定最优<span class="me-text me-text-b">技术方案</span>，推动<span class="me-text me-text-a">前沿技术</span>在项目中落地，高效解决<span
+              class="me-text me-text-c">多端适配、性能优化、系统集成</span>等核心技术问题。
+            </div>
+
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              拥有<span class="me-text me-text-c">商业</span>、高速交通、医疗等<span class="me-text me-text-c">多行业开发经验</span>能够快速理解不同行业
+            <span class="me-text me-text-c">业务需求</span>实现技术与业务的<span class="me-text me-text-c">深度结合</span>，保障项目交付<span class="me-text me-text-e">质量与效率</span>！
+            </div>
+
+            
           </section>
         </section>
         <section class="resume c-mt-40 " id="resume">
@@ -149,8 +170,8 @@
             <div class="box-item">
               <ul>
                 <li><i class="icon iconfont icon-icon"></i>HTML</li>
-                <li><i class="icon iconfont icon-icon"></i>CSS</li>
-                <li><i class="icon iconfont icon-icon"></i>SCSS/Less</li>
+                <li><i class="icon iconfont icon-icon"></i>CSS/SCSS/Less</li>
+                <li><i class="icon iconfont icon-icon"></i>TailwindCSS</li>
                 <li><i class="icon iconfont icon-icon"></i>JavaScript</li>
                 <li><i class="icon iconfont icon-icon"></i>TypeScript</li>
               </ul>
@@ -161,14 +182,14 @@
                 <li><i class="icon iconfont icon-icon"></i>React.js</li>
                 <li><i class="icon iconfont icon-icon"></i>Canvas</li>
                 <li><i class="icon iconfont icon-icon"></i>WebGL</li>
-                <li><i class="icon iconfont icon-icon"></i>SVG</li>
+                <li><i class="icon iconfont icon-icon"></i>Thress.js</li>
               </ul>
             </div>
             <div class="box-item">
               <ul>
                 <li><i class="icon iconfont icon-icon"></i>UniApp</li>
                 <li><i class="icon iconfont icon-icon"></i>Webpack/Vite</li>
-                <li><i class="icon iconfont icon-icon"></i>RESTful API</li>
+                <li><i class="icon iconfont icon-icon"></i>MicroApp</li>
                 <li><i class="icon iconfont icon-icon"></i>Node.js</li>
                 <li><i class="icon iconfont icon-icon"></i>Mysql/MongoDB</li>
               </ul>
@@ -177,9 +198,9 @@
               <ul>
                 <li><i class="icon iconfont icon-icon"></i>响应式开发</li>
                 <li><i class="icon iconfont icon-icon"></i>大屏可视化</li>
-                <li><i class="icon iconfont icon-icon"></i>混合APP</li>
-                <li><i class="icon iconfont icon-icon"></i>SpringBoot</li>
-                <li><i class="icon iconfont icon-icon"></i>AI...</li>
+                <li><i class="icon iconfont icon-icon"></i>多端跨平台</li>
+                <li><i class="icon iconfont icon-icon"></i>全流程项目管理</li>
+                <li><i class="icon iconfont icon-icon"></i>AI系统集成</li>
               </ul>
             </div>
           </div>
@@ -190,7 +211,7 @@
             </div>
             <ExperienceStep/>
           </div>
-          <div class="resume-box best-box">
+          <!-- <div class="resume-box best-box">
             <div class="box-title">
               <span class="title-icon iconfont icon-zhuomian-diannaoxianshiqi"> </span>
               <span class="text">兴趣爱好</span>
@@ -207,7 +228,7 @@
               <i class="icon icon-d iconfont icon-lvyoufabu"></i>
               <div class="best-text">旅游是我心中永不停歇的冒险！我喜欢追逐风景，感受异域文化的魅力.</div>
             </div>
-          </div>
+          </div> -->
         </section>
         <section class="works c-mt-40 c-mb-40" id="work">
           <ZySectionHeader title="作品集" titleNum="04"/>
@@ -319,7 +340,7 @@
                 </section>-->
 
 
-        <section class="connect c-mt-40 c-mb-40" id="contact">
+        <!-- <section class="connect c-mt-40 c-mb-40" id="contact">
           <ZySectionHeader title="给我留言" titleNum="06"/>
           <p class="message-tips">留下你的足迹，让我知道你在这里看过我的留言板。</p>
           <div class="connect-box">
@@ -352,7 +373,7 @@
               </li>
             </ul>
           </div>
-        </section>
+        </section> -->
       </section>
       <WorldMap/>
       <ZyModal :minWidth="350" :show="state.show.work" title="项目详情" key="ViewUserInfo" @close="close">
@@ -521,7 +542,12 @@ const viewWorks = (item) => {
 }
 
 const downloadResume = () => {
-  alert('简历下载已关闭')
+  // alert('简历下载已关闭')
+  // 简历 
+  // "https://cashier.obs.cidc-rp-12.joint.cmecloud.cn/file/pdf/20260309154800wize8ecpwgzw.pdf"
+  window.open("https://cashier.obs.cidc-rp-12.joint.cmecloud.cn/file/pdf/20260309154800wize8ecpwgzw.pdf")
+  // 使用downloadFile 方法下载文件 
+
 }
 // 实现平滑滚动到锚点的方法
 const scrollToSection1 = (id) => {

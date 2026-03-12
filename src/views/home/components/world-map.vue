@@ -74,10 +74,10 @@ const state = reactive({
         data: [
           // 标记的地点数据
           {
-            name: '🧭贵州·贵阳',
+            name: '🧭河南·焦作',
             // symbol: 'image://https://xsgames.co/randomusers/assets/avatars/male/24.jpg',
             symbol: 'circle', // 标记点的图形样式，可以是圆圈：'circle'、气泡：'pin'、方块：'rect'等
-            value: [106.628201, 25.646694], // 数值可以影响标记点大小，例如 [经度, 纬度, 100]
+            value: [113.14, 35.12], // 数值可以影响标记点大小，例如 [经度, 纬度, 100]
           }
           // 可以添加多个标记点
         ],

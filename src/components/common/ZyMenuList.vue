@@ -33,7 +33,7 @@
         // {name: '项目经验', id: 'project'},
         // {name: 'BLOG', id: 'blog', path: '/blog'},
         {name: '作品集', id: 'work', },
-        {name: '给我留言', id: 'contact', },
+        // {name: '给我留言', id: 'contact', },
     ];
 
     // 响应式数据，用于存储当前鼠标悬停的选项的索引、底纹的位置和宽度，以及默认激活的菜单项索引
